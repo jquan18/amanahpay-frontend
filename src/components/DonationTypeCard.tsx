@@ -22,19 +22,19 @@ const DonationTypeCard: React.FC<DonationTypeCardProps> = ({
   return (
     <div 
       className={cn(
-        "rounded-md border p-4 transition-colors cursor-pointer",
+        "rounded-lg border p-4 transition-all cursor-pointer",
         selected 
-          ? "border-primary bg-primary/5" 
-          : "border-gray-200 hover:border-primary/50",
+          ? "border-primary bg-primary/5 ring-2 ring-primary ring-offset-2" 
+          : "border-gray-200 hover:border-primary/50 hover:bg-gray-50",
         className
       )}
       onClick={onClick}
     >
-      <div className="flex items-center mb-2">
-        <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-2">
+      <div className="flex items-center mb-3">
+        <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3">
           {icon}
         </div>
-        <h3 className="font-medium">{title}</h3>
+        <h3 className="font-semibold text-lg">{title}</h3>
       </div>
       <p className="text-sm text-gray-600">{description}</p>
     </div>
