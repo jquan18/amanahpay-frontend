@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { 
@@ -12,7 +11,7 @@ import {
   X
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { useMediaQuery } from '@/hooks/use-mobile';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 interface DonorLayoutProps {
   children: React.ReactNode;
@@ -21,7 +20,7 @@ interface DonorLayoutProps {
 const DonorLayout: React.FC<DonorLayoutProps> = ({ children }) => {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = React.useState(false);
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const isMobile = useIsMobile();
 
   const navItems = [
     { icon: Home, label: 'Dashboard', path: '/donor/dashboard' },
