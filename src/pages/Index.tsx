@@ -11,10 +11,10 @@ const Index = () => {
   }, [navigate]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex items-center justify-center bg-gray-50">
       <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to TrustChain</h1>
-        <p className="text-xl text-gray-600">Redirecting to dashboard...</p>
+        <h1 className="text-3xl font-semibold mb-3 text-gray-800">TrustChain</h1>
+        <p className="text-gray-600">Redirecting...</p>
       </div>
     </div>
   );
