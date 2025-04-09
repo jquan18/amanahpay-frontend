@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { 
@@ -38,9 +39,9 @@ const DonorLayout: React.FC<DonorLayoutProps> = ({ children }) => {
       <header className="md:hidden bg-white border-b p-4 flex items-center justify-between sticky top-0 z-10">
         <div className="flex items-center space-x-2">
           <div className="w-7 h-7 rounded-md bg-secondary flex items-center justify-center">
-            <span className="text-secondary-foreground font-bold text-sm">TC</span>
+            <span className="text-secondary-foreground font-bold text-sm">DC</span>
           </div>
-          <span className="font-medium">TrustChain</span>
+          <span className="font-medium">DonateChain</span>
         </div>
 
         <button 
@@ -62,9 +63,9 @@ const DonorLayout: React.FC<DonorLayoutProps> = ({ children }) => {
           {/* Logo on desktop */}
           <div className="p-4 border-b hidden md:flex items-center">
             <div className="w-7 h-7 rounded-md bg-secondary flex items-center justify-center">
-              <span className="text-secondary-foreground font-bold text-sm">TC</span>
+              <span className="text-secondary-foreground font-bold text-sm">DC</span>
             </div>
-            <span className="font-medium ml-2">TrustChain</span>
+            <span className="font-medium ml-2">DonateChain</span>
           </div>
 
           {/* Mobile menu header */}
@@ -72,9 +73,9 @@ const DonorLayout: React.FC<DonorLayoutProps> = ({ children }) => {
             <div className="p-4 border-b flex items-center justify-between">
               <div className="flex items-center space-x-2">
                 <div className="w-7 h-7 rounded-md bg-secondary flex items-center justify-center">
-                  <span className="text-secondary-foreground font-bold text-sm">TC</span>
+                  <span className="text-secondary-foreground font-bold text-sm">DC</span>
                 </div>
-                <span className="font-medium">TrustChain</span>
+                <span className="font-medium">DonateChain</span>
               </div>
               <button 
                 onClick={toggleMenu}
@@ -126,7 +127,7 @@ const DonorLayout: React.FC<DonorLayoutProps> = ({ children }) => {
           {/* Desktop Page Header */}
           <header className="hidden md:flex bg-white border-b p-4 items-center justify-between sticky top-0 z-10">
             <h1 className="text-lg font-medium">
-              {navItems.find(item => item.path === location.pathname)?.label || 'TrustChain'}
+              {navItems.find(item => item.path === location.pathname)?.label || 'DonateChain'}
             </h1>
             <div className="flex items-center space-x-3">
               <span className="text-sm text-gray-600">Ahmed</span>
